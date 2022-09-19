@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <nav>
+        <div onclick="openNav()"><i class="fa-solid fa-bars"></i></div>
+        <div id="close" class="close">
+            <h1 class="closeit" onclick="closeNav()">&times;</h1>
+            <h1 class="side">Home</h1>
+            <h1 class="side">Map</h1>
+            <h1 class="side">Subscription</h1>
+            <h1 class="side">Contact</h1>
+        </div>
+    </nav>
+    
+    <div id="page">
+        <div onload="clock()" id="show" class="clock"></div>
+        <div class="main">
+            <div class="avg" id="avg">
+                <h1>Average Calculation</h1>
+                <span>Num-01:</span>  <input type="number" class="num" id="num1">
+                <span>Num-02:</span> <input type="number" class="num" id="num2">
+                <span>Num-03:</span> <input type="number" class="num" id="num3">
+                <span>Num-04:</span> <input type="number" class="num" id="num4">
+                <span>Num-05:</span> <input type="number" class="num" id="num5">
+                <span>Num-06:</span> <input type="number" class="num" id="num6">
+                <span>Num-07:</span> <input type="number" class="num" id="num7">
+                <span>Num-08:</span> <input type="number" class="num" id="num8">
+                <span>Num-09:</span> <input type="number" class="num" id="num9">
+                <span>Num-10:</span> <input type="number" class="num" id="num10">
+                <button class="butt" onclick="Calculate()">Calculate</button>
+                <div class="result" id="result"></div>
+            </div>
+            <form onsubmit="return formValidate()">
+                <p id="error" class="text"></p>
+                <input class="inpu" type="text" id="ema" placeholder="Email address">
+                <input class="inpu" type="phone" id="phone" placeholder="Phone Number">
+                <input class="inpu" type="password" id="pass" placeholder="Password">
+                <input class="inpu submit" type="submit" value="Log In">
+                <a href="">Forgotten password?</a>
+            </form>
+        </div>
+        <div class="about">
+            <div class="head"> 
+                <h1>Everything you want to know about us</h1>
+                <div class="para">
+                    <div id="down" class="down" onclick="openpara()"><i class="fa-solid fa-angle-down"></i></div>
+                    <div id="up" class="up" onclick="closepara()" ><i class="fa-solid fa-angle-up"></i></div>
+                </div>
+            </div>
+            <p id="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque magni reiciendis nobis tenetur quos atque porro, ratione voluptate optio corporis, sapiente corrupti illum architecto, quis maiores! Unde suscipit tenetur dignissimos.</p>
+        </div>
+        
+    </div>
+   
+<script src="main.js"></script>  
+</body>
+</html>

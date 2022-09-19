@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav i{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: #1877f2;
+    cursor: pointer;
+}
+.close{
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #1877f2; 
+    color: white;
+    overflow-x: hidden; 
+    padding-top: 15px; 
+    transition: 0.5s;
+    cursor: pointer;
+}
+.closeit{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.side{
+    margin-left: 20px;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+
+
+.clock{
+    background-color: #1877f2;
+    color: white;
+    text-align: center;
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+form{
+    margin-right: 150px;
+    width: 400px; 
+    margin-top: 20px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+form a{
+    text-decoration: none;
+    color: #1b74e4;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid #e1e4e9;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: inherit;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+form .inpu{
+    width: 85%;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 14px 10px;
+    border-radius: 6px;
+    border: 1px solid #e1e4e9;
+    margin-bottom: 15px;
+}
+form .inpu::-webkit-input-placeholder{
+    font-size: 17px;
+}
+form .submit{
+    width: 90%;
+    padding: 12px 8px;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+form .inpu:focus{
+    
+    outline: 1px solid #1b74e4;
+}
+form .text{
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+.avg{
+    width: 650px;
+    border: 1px solid #1877f2;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border: 1px solid #e1e4e9;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: inherit;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+}
+.avg h1{
+    color: #1877f2;
+    margin-bottom: 25px;
+}
+.avg .num{
+    font-size: 16px;
+    color: #10478f;
+    padding: 10px 5px;
+    width: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border:1px solid #10478f;
+    border-radius: 5px;
+}
+.avg button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 50%;
+    padding: 12px 8px;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.avg span{
+    color: #072e62;
+    font-weight: bold;
+}
+.avg .result{
+    font-size: 24px;
+    color: white;
+    background-color: #072e62;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+}
+.main{
+    display: flex;
+
+}
+.about{
+    width: 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 25px;
+    border-radius: 10px;
+    background-color: white;
+    font-family: inherit;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+   
+}
+.head{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1877f2;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+.head i{
+    font-size: 24px;
+}
+.about p{
+    display: none;
+    border-radius: 0px 0px 10px 10px;
+    padding: 15px;
+    background-color: white;
+    color: #1877f2;
+    font-size: 16px;
+    font-family: inherit;
+}
+.about{
+    cursor: pointer;
+}
+.para{
+    position: relative;
+}
+.fa-angle-up{
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+.up{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.down{
+    display: block;
+    
+}
+
+
